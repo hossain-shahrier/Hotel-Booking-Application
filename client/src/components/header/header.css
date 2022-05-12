@@ -1,13 +1,9 @@
 .header {
-  /* background-color: #003580; */
-
-  /* background-color: #2f4454; */
-  /* background-color: #d83f87; */
   background-color: #5ab9ea;
-  position: relative;
   color: white;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .headerContainer {
   width: 100%;
