@@ -3,7 +3,7 @@ import express from "express";
 import cookieParser from "cookie-parser";
 // DB
 import connect from "./connection.js";
-
+// import cors from "cros";
 // routes
 import authRoute from "./routes/auth.js";
 import hotelsRoute from "./routes/hotels.js";
@@ -12,6 +12,7 @@ import usersRoute from "./routes/users.js";
 const app = express();
 
 //middlewares
+// app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 // routes

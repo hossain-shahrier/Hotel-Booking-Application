@@ -1,6 +1,8 @@
 import express from "express";
 // All controllers
 import {
+  countByCity,
+  countByType,
   CreateHotelController,
   DeleteAllHotelsController,
   DeleteHotelController,
@@ -14,14 +16,16 @@ const router = express.Router();
 // CREATE HOTELS
 router.post("/", verifyAdmin, CreateHotelController);
 // UPDATE HOTELS INFO
-router.put("/:id", verifyAdmin, UpdateHotelController);
-// DELETE HOTELS
-router.delete("/:id", verifyAdmin, DeleteHotelController);
+router.put("/find/:id", verifyAdmin, UpdateHotelController);
+// DELETE HOTEL
+router.delete("/find/:id", verifyAdmin, DeleteHotelController);
 // DELETE ALL HOTELS
 router.delete("/", verifyAdmin, DeleteAllHotelsController);
 // GET SPECIFIC HOTELS
-router.get("/:id", GetHotelController);
+router.get("/find/:id", GetHotelController);
 // GET ALL HOTELS
 router.get("/", GetAllHotelsController);
+router.get("/countByCity", countByCity);
+router.get("/countByType", countByType);
 
 export default router;

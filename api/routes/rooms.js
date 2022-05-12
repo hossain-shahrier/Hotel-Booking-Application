@@ -1,7 +1,6 @@
 import express from "express";
 import {
   CreateRoomController,
-  DeleteAllRoomsController,
   DeleteRoomController,
   GetAllRoomsController,
   GetRoomController,
@@ -17,7 +16,7 @@ router.put("/:id", verifyAdmin, UpdateRoomController);
 // DELETE RoomS
 router.delete("/:id/:hotelid", verifyAdmin, DeleteRoomController);
 // DELETE ALL RoomS
-router.delete("/:hotelid", verifyAdmin, DeleteAllRoomsController);
+// router.delete("/:hotelid", verifyAdmin, DeleteAllRoomsController);
 // GET SPECIFIC RoomS
 router.get("/:id", GetRoomController);
 // GET ALL RoomS
