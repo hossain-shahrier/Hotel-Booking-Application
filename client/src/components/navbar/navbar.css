@@ -7,11 +7,14 @@
   display: flex;
   justify-content: center;
 }
+a {
+  color: #fff;
+  text-decoration: none;
+}
 .navContainer {
   width: 100%;
   max-width: 1024px;
   padding: 0px 20px;
-
   color: white;
   display: flex;
   align-items: center;
