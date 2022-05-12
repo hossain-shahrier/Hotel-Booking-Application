@@ -1,0 +1,92 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+.listSearch {
+  flex: 1;
+  background-color: #84ceeb;
+  padding: 15px;
+  border-radius: 5px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.42);
+}
+
+.listTitle {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+.listItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.listItem > label {
+  font-size: 12px;
+}
+.listItem > input {
+  height: 30px;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+.listItem > span {
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 7px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.listOptions {
+  padding: 10px;
+}
+.listOptionItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.listOptionInput {
+  width: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.listSearch > button {
+  padding: 8px 12px;
+  /* background-color: #5ab9ea; */
+  background-color: #84ceeb;
+  cursor: pointer;
+  /* border: none; */
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  font-weight: 500;
+  /* -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.42); */
+}
+.listSearch > button:hover {
+  background-color: #5ab9ea;
+  border: none;
+}
+.listResult {
+  flex: 3;
+}
